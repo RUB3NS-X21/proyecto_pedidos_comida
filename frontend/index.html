@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapidito | Comida a Domicilio</title>
+    <!-- VINCULACION AL ARCHIVO CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="logo-container">
+            <!-- NOMBRE DEL DISEÑO -->
+            <h1 class="logo">🍕 Rapidito.</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li>
+                    <a href="checkout.html" class="cart-btn">
+                        Mi Carrito 
+                        <span id="cart-counter" class="cart-counter">1</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner Principal -->
+        <section class="hero">
+            <h2>Comida caliente, directo a tu puerta</h2>
+            <p>Las mejores pizzas, hamburguesas y bebidas de la ciudad. Pedí ahora y recibís en menos de media hora.</p>
+        </section>
+
+        <!-- Barra de Filtros -->
+        <section class="filtros">
+            <h3>¿Qué se te antoja hoy?</h3>
+            <div class="botones-filtro">
+                <button class="btn-filtro active" data-categoria="todas">Todas</button>
+                <button class="btn-filtro" data-categoria="pizzas">Pizzas</button>
+                <button class="btn-filtro" data-categoria="hamburguesas">Hamburguesas</button>
+                <button class="btn-filtro" data-categoria="bebidas">Bebidas</button>
+            </div>
+        </section>
+
+        <!-- Catálogo de Productos (Grid) -->
+        <section class="catalogo">
+            <div class="grid-productos" id="lista-productos">
+                
+                <!-- Tarjeta 1: Pizza -->
+                <article class="tarjeta-producto">
+                    <!-- Nota: Cambia la ruta del src cuando tengas tus imágenes descargadas -->
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Pizza Margarita" class="producto-img">
+                    <div class="producto-info">
+                        <h4 class="producto-titulo">Pizza Margarita Clásica</h4>
+                        <p class="producto-desc">Salsa de tomate artesanal, mozzarella fresca y albahaca.</p>
+                        <div class="producto-precio-btn">
+                            <span class="precio">Q 89.00</span>
+                            <button class="btn-agregar" data-id="1">+ Añadir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2: Pizza Pepperoni -->
+                <article class="tarjeta-producto">
+                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Pizza Pepperoni" class="producto-img">
+                    <div class="producto-info">
+                        <h4 class="producto-titulo">Pizza Pepperoni XL</h4>
+                        <p class="producto-desc">Doble capa de pepperoni, queso cheddar y orégano.</p>
+                        <div class="producto-precio-btn">
+                            <span class="precio">Q 105.00</span>
+                            <button class="btn-agregar" data-id="2">+ Añadir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3: Hamburguesa -->
+                <article class="tarjeta-producto">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Hamburguesa BBQ" class="producto-img">
+                    <div class="producto-info">
+                        <h4 class="producto-titulo">Hamburguesa BBQ Smash</h4>
+                        <p class="producto-desc">Doble smash patty, cheddar ahumado, cebolla caramelizada y salsa BBQ.</p>
+                        <div class="producto-precio-btn">
+                            <span class="precio">Q 79.00</span>
+                            <button class="btn-agregar" data-id="3">+ Añadir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 4: Bebida -->
+                <article class="tarjeta-producto">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Limonada Natural" class="producto-img">
+                    <div class="producto-info">
+                        <h4 class="producto-titulo">Limonada Natural</h4>
+                        <p class="producto-desc">Limón recién exprimido, menta fresca y azúcar mascabado.</p>
+                        <div class="producto-precio-btn">
+                            <span class="precio">Q 28.00</span>
+                            <button class="btn-agregar" data-id="4">+ Añadir</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Script de lógica -->
+    <script src="js/app.js"></script>
+</body>
+</html>

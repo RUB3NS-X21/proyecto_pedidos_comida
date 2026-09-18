@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapidito | Finalizar Pedido</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <h1 class="logo">🍕 Rapidito.</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li>
+                    <a href="checkout.html" class="cart-btn active">
+                        Mi Carrito 
+                        <span id="cart-counter" class="cart-counter">1</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-checkout">
+        <h2 class="titulo-checkout">Finalizar Pedido</h2>
+        
+        <div class="grid-checkout">
+            <!-- Columna Izquierda: Formulario de Datos -->
+            <section class="formulario-envio">
+                <h3>Datos de Entrega</h3>
+                <form id="form-checkout">
+                    <div class="grupo-input">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" required placeholder="Ej. Guillermo Castillo">
+                    </div>
+                    <div class="grupo-input">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" required placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="grupo-input">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" required placeholder="Ej. 1234-5678">
+                    </div>
+                    <div class="grupo-input">
+                        <label for="direccion">Dirección de Entrega</label>
+                        <textarea id="direccion" rows="3" required placeholder="Detalla tu calle, zona, casa..."></textarea>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Columna Derecha: Resumen del Pedido -->
+            <section class="resumen-pedido">
+                <h3>Resumen de tu Pedido</h3>
+                <div class="lista-carrito">
+                    <!-- Producto quemado de ejemplo para la Fase 1 -->
+                    <div class="item-carrito">
+                        <div class="item-info">
+                            <h4>Pizza Margarita Clásica</h4>
+                            <p>1 x Q 89.00</p>
+                        </div>
+                        <span class="item-total">Q 89.00</span>
+                    </div>
+                </div>
+                
+                <div class="totales">
+                    <div class="fila-total">
+                        <span>Subtotal</span>
+                        <span>Q 89.00</span>
+                    </div>
+                    <div class="fila-total">
+                        <span>Envío</span>
+                        <span>Q 15.00</span>
+                    </div>
+                    <div class="fila-total total-final">
+                        <span>Total a Pagar</span>
+                        <span>Q 104.00</span>
+                    </div>
+                </div>
+
+                <!-- Este botón activa el formulario de la izquierda -->
+                <button type="submit" form="form-checkout" class="btn-confirmar">Confirmar Pedido</button>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
