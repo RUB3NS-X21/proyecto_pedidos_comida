@@ -328,7 +328,6 @@ main {
     background-color: var(--color-secundario);
 }
 
-/* Responsividad estricta para celulares */
 @media (max-width: 768px) {
     .grid-checkout {
         grid-template-columns: 1fr; /* Coloca el resumen debajo del formulario en pantallas pequeñas */
